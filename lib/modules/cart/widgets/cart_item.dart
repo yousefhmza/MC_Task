@@ -32,7 +32,7 @@ class CartItem extends StatelessWidget {
             SizedBox(
               height: 125.0.h,
               width: 125.0.h,
-              child: Image.network(product.image),
+              child: CustomNetworkImage(image: product.image),
             ),
             HorizontalSpace(AppSize.s16.w),
             Expanded(
