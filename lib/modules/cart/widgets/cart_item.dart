@@ -21,6 +21,7 @@ class CartItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(product.toJson());
     final CartViewModel cartVM = BlocProvider.of<CartViewModel>(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppSize.s4.r),
@@ -31,7 +32,7 @@ class CartItem extends StatelessWidget {
             SizedBox(
               height: 125.0.h,
               width: 125.0.h,
-              child: CustomNetworkImage(image: product.image),
+              child: Image.network(product.image),
             ),
             HorizontalSpace(AppSize.s16.w),
             Expanded(

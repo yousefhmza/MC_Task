@@ -92,7 +92,7 @@ class _ScreenContent extends StatelessWidget {
                     CartProduct(
                       productID: product.id.toString(),
                       name: product.title,
-                      image: product.imgUrl,
+                      image: product.images[0],
                       price: product.price.toString(),
                       quantity: 1,
                     ),
